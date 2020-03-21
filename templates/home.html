@@ -1,0 +1,82 @@
+{% extends "index.html" %}
+{% block content %}
+<!-- Header -->
+<header class="masthead d-flex" style="background-image: url({{ url_for('static', filename='img/bg-masthead.jpg') }})">
+  <div class="myname container text-center my-auto">
+    <h1 class="mb-1">Garrick Suemith</h1>
+    <h3 class="mb-5">
+      <em>Data Scientist</em>
+    </h3>
+    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">Portfolio</a>
+    <a class="btn btn-primary btn-xl js-scroll-trigger" href="{{ url_for('static', filename='resume.pdf') }}">Resume</a>
+  </div>
+  <div class="overlay"></div>
+</header>
+
+<!-- Portfolio -->
+<section class="content-section-portfolio" id="portfolio">
+  <div class="container">
+    <div class="content-section-heading text-center">
+      <h3 class="text-secondary mb-0">Portfolio</h3>
+      <h2 class="mb-5">Recent Projects</h2>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-lg-6">
+        <a class="portfolio-item" href="#">
+          <span class="caption">
+            <span class="caption-content">
+              <h2>CNN Feature Visualizaton</h2>
+              <p class="mb-0">Plotted activation maps of layers within pre-trained CNN’s that displayed recognizable patterns of image features</p>
+            </span>
+          </span>
+          <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio-1.jpg') }}" alt="">
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="portfolio-item" href="#">
+          <span class="caption">
+            <span class="caption-content">
+              <h2>Income Level Classifier</h2>
+              <p class="mb-0">Explored Scikit-Learn’s comprehensive library of Machine Learning
+models to find potential donors out of California census data.</p>
+            </span>
+          </span>
+          <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio-2.jpg') }}" alt="">
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="portfolio-item" href="#">
+          <span class="caption">
+            <span class="caption-content">
+              <h2>NLP Disaster Response Pipeline</h2>
+              <p class="mb-0">Trained a machine learning pipeline to classify messages originating
+from disaster areas and implemented it in a web app to help emergency
+workers evaluate the importance of similar messages.</p>
+            </span>
+          </span>
+          <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio-3.jpg') }}" alt="">
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="portfolio-item" href="#">
+          <span class="caption">
+            <span class="caption-content">
+              <h2>Transfer Learning Flower Species Classifier</h2>
+              <p class="mb-0">Built scripts using the Pytorch Deep Learning library for training the Fully
+Connected layers of pretrained torchvision models. Scripts run on GPU.</p>
+            </span>
+          </span>
+          <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio-4.jpg') }}" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="content-section bg-primary text-white">
+  <div class="container text-center">
+    <h2 class="mb-4">To contact Garrick, please select a button below.  Thank you!</h2>
+  </div>
+</section>
+{% endblock content %}
