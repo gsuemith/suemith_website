@@ -8,7 +8,7 @@
       <em>Data Scientist</em>
     </h3>
     <a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">Portfolio</a>
-    <a class="btn btn-primary btn-xl js-scroll-trigger" href="{{ url_for('static', filename='resume.pdf') }}">Resume</a>
+    <a class="btn btn-primary btn-xl js-scroll-trigger" href="{{ url_for('static', filename='resume.pdf') }}" target="_blank">Resume</a>
   </div>
   <div class="overlay"></div>
 </header>
@@ -26,7 +26,8 @@
           <span class="caption">
             <span class="caption-content">
               <h2>CNN Feature Visualizaton</h2>
-              <p class="mb-0">Plotted activation maps of layers within pre-trained CNN’s that displayed recognizable patterns of image features</p>
+              <p class="mb-0">Plotted activation maps of layers within
+pre-trained CNN’s that displayed recognizable patterns of image features</p>
             </span>
           </span>
           <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio-1.jpg') }}" alt="">
